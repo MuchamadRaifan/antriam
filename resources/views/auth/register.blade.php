@@ -1,5 +1,5 @@
 @extends('layout.layout')
-@section('title', 'login')
+@section('title', 'Register')
 @section('content')
 
 <section class="vh-100" style="background-color: #eee;">
@@ -13,22 +13,30 @@
                             {{Session('success')}}
                         </div>
                         @endif
-                        @if (Session::get('error'))
+                        @if (Session::get('notAllowed'))
                         <div class="alert alert-danger">
-                            {{Session::get('error')}}
+                            {{Session::get('notAllowed')}}
                         </div>
                         @endif
                         <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
                         <div class="row justify-content-center">
                             <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign in</p>
-                                <form action="{{route('login-auth')}}" method="POST" class="bg-body-tertiary rounded">
+                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</p>
+                                <form action="{{route('register-input')}}" method="POST"
+                                    class="bg-body-tertiary rounded">
                                     @csrf
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <input type="text" name="name" id="form3Example1c" class="form-control" />
                                             <label class="form-label" for="form3Example1c">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="email" name="email" id="form3Example3c" class="form-control" />
+                                            <label class="form-label" for="form3Example3c">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
@@ -40,16 +48,15 @@
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
                                     </div>
-                                    <p class="text-center">Dont have an account? <a href="/register">click</a>
-                                    </p>
+                                    <p class="text-center"><a href="/login">Login</a></p>
                                 </form>
                             </div>
                             <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                                <img src="https://i.pinimg.com/564x/ed/1b/94/ed1b94cc50506c78628b7018f51c728a.jpg"
+                                <img src="https://i.pinimg.com/564x/e3/eb/13/e3eb13afade023d725e69810cf3aa57b.jpg"
                                     class="img-fluid" alt="Sample image">
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>

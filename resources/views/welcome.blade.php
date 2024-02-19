@@ -73,7 +73,7 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -107,8 +107,8 @@
                             <h2 data-aos="fade-right">Layanan Untuk Mempermudah Proses Antrian dimana saja</h2>
                             <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Cukup daftar online dari rumah
                             </p>
-                            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#"
-                            class="btn btn-outline-white">Daftar Sekarang</a></p>
+                            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="/register"
+                                    class="btn btn-outline-white">Daftar Sekarang</a></p>
                         </div>
                         <div class="col-lg-4 iphone-wrap">
                             <img src="assets/img/gambar.png" alt="Image" class="phone-1" data-aos="fade-right">
@@ -138,7 +138,7 @@
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
                         <div class="feature-1 text-center">
                             <div class="wrap-icon icon-1">
-                                <i class="bi bi-people"></i>
+                                <i class="bi bi-person"></i>
                             </div>
                             <h3 class="mb-3">Pendaftaran Online</h3>
                             <p>Mendaftar ke Website Secara Online Tanpa Perlu Antri</p>
@@ -147,7 +147,7 @@
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="feature-1 text-center">
                             <div class="wrap-icon icon-1">
-                                <i class="bi bi-brightness-high"></i>
+                                <i class="bi bi-list-check"></i>
                             </div>
                             <h3 class="mb-3">Antrian</h3>
                             <p class="">Cek status Antrian Dan Kepadatan Penduduk Secara Online Tanpa Harus
@@ -157,7 +157,7 @@
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="feature-1 text-center">
                             <div class="wrap-icon icon-1">
-                                <i class="bi bi-bar-chart"></i>
+                                <i class="bi bi-journal-check"></i>
                             </div>
                             <h3 class="mb-3">Petunjuk Pendaftaran Online</h3>
                             <p>Cek Petunjuk Untuk Melihat Step Step Dalam Mendaftar Di Pendaftaran Online</p>
@@ -165,26 +165,36 @@
                     </div>
                 </div>
             </div>
-            <section class="ffunfacts type_two bg-gray-100 py-12">
+
+            <section class="ffunfacts type_two bg-gray-100 py-12 mt-5">
                 <div class="container mx-auto">
-                    <h3 class="text-center text-teal-500 text-2xl sm:text-3xl mb-8" style="color:#17a2b8;">Semua
-                        Layanan Pendaftaran Per-Hari Ini</h3>
-                    <div class="cgrid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <h3 class="text-center text-teal-500 text-2xl sm:text-3xl mb-8" style="color:#17a2b8;">
+                        Semua Layanan Pendaftaran Per-Hari Ini
+                    </h3>
+                    <div class="cgrid grid-cols-2 gap-6">
                         <div class="flex justify-center items-center bg-white shadow-md rounded-lg p-6 text-center">
-                            <h2 style="color:#20c997;" class="text-3xl sm:text-5xl font-bold"><span
-                                    class="counter-value">567</span></h2>
-                            <h6 style="color:#17a2b8;" class="text-teal-500 text-lg">Total Pendaftar</h6>
+                            <h2 style="color:#20c997;" class="text-3xl sm:text-5xl font-bold">
+                                <span class="counter-value">567</span>
+                            </h2>
+                            <h6 style="color:#17a2b8;" class="text-teal-500 text-lg">
+                                Total Pendaftar
+                            </h6>
                         </div>
-                    </div>
-                    <div class="flex justify-center items-center bg-white shadow-md rounded-lg p-6 text-end">
-                        <div class="fun_facts_box type_two">
-                            <h2 style="color:#20c997;" class="text-3xl sm:text-5xl font-bold"><span
-                                    class="counter-value">268</span></h2>
-                            <h6 style="color:#17a2b8;" class="text-teal-500 text-lg">Total Antrian</h6>
+
+                        <div class="flex justify-center items-center bg-white shadow-md rounded-lg p-6 text-center">
+                            <div class="fun_facts_box type_two">
+                                <h2 style="color:#20c997;" class="text-3xl sm:text-5xl font-bold">
+                                    <span class="counter-value">268</span>
+                                </h2>
+                                <h6 style="color:#17a2b8;" class="text-teal-500 text-lg">
+                                    Total Antrian
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <!-- ======= Testimonials Section ======= -->
             <section class="section border-top border-bottom">
                 <div class="container">

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+});
+
+Route::get('/dash', function () {
+    return view('dashboard.dashboard');
+});
+
+// Route::match(['get', 'post'], '/login', [AuthController::class, 'index'])->name('login');
+// Route::post('/auth/auth', [AuthController::class, 'auth'])->name('auth.auth');
+
+// route register
+Route::get('/register', [AuthController::class, 'indexRegister'])->name('register');
+Route::post('/register/input', [AuthController::class, 'registerAccount'])->name('register-input'); 
+
+//route login
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/login/auth', [AuthController::class, 'auth'])->name('login-auth');
